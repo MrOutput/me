@@ -1,0 +1,47 @@
+html {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+header {
+  background-color: LightGrey;
+}
+div.container {
+  margin: 0 auto;
+  width: 980px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+h1.name {
+  font-size: 6em;
+  margin: 0;
+  text-align: center;
+}
+ul.skills {
+  margin: 0;
+  padding-left: 0;
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+  div.container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1.name {
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=layout.min.css.map */
