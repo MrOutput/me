@@ -2,7 +2,7 @@
 
 ## Back in the Day...
 
-Looking back, being grounded wasn't such a bad thing. Programming for the web has been a passionof mine ever since picking up a Microsoft Front Page 2002 book.
+Looking back, being grounded wasn't such a bad thing. Programming for the web has been a passion of mine ever since picking up a Microsoft Front Page 2002 book.
 
 I hope to work with a fun, energetic, passionate team of developers and project managers. 
 
