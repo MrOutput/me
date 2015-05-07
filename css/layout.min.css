@@ -71,6 +71,7 @@ h1.name {
   font-family: "banshee-std", sans-serif;
   position: relative;
   z-index: 1;
+  animation: name 1.5s ease-out 0s infinite alternate;
 }
 div.col-lg-4 {
   width: 50%;
@@ -91,10 +92,10 @@ h2.title {
 /* The animation code */
 @keyframes name {
   0% {
-    text-shadow: -2px 2px 0px DarkOrange;
+    opacity: 0.7;
   }
   100% {
-    text-shadow: 1px 1px 0px DarkOrange;
+    opacity: 1;
   }
 }
 h3 {
