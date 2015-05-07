@@ -1,17 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700);
 html {
   font-size: 18px;
 }
 body {
   margin: 0;
   font-size: 1em;
-  font-family: sans-serif;
-}
-header {
-  background-color: LightGrey;
-}
-div.container {
-  margin: 0 auto;
-  width: 980px;
+  font-family: "sans-serif";
 }
 h1,
 h2,
@@ -19,12 +13,49 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: serif;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+}
+ul.skills > li {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  display: inline;
+  float: left;
+  margin-left: 10%;
+}
+ul.skills {
+  margin: 0 auto;
+  width: 100%;
+}
+footer {
+  clear: left;
+}
+header {
+  text-align: center;
+}
+header h2.title {
+  font-weight: 200;
+  font-size: 3.25em;
+  font-family: "edding-780", cursive;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0.15em;
+}
+div.container {
+  margin: 0 auto;
+  width: 980px;
 }
 h1.name {
-  font-size: 6em;
+  font-size: 8em;
   margin: 0;
   text-align: center;
+  padding: 0.15em 0.15em 0em 0.15em;
+  color: #232323;
+  font-weight: normal;
+  font-family: "banshee-std", sans-serif;
+}
+h3 {
+  font-size: 3em;
 }
 ul.skills {
   margin: 0;
@@ -39,7 +70,7 @@ ul.skills {
     width: 100%;
   }
   h1.name {
-    font-size: 4em;
+    font-size: 5.25em;
     margin: 0;
     text-align: center;
   }
