@@ -1,11 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 html {
   font-size: 18px;
 }
 body {
   margin: 0;
   font-size: 1em;
-  font-family: "sans-serif";
+  font-family: 'Open Sans', sans-serif;
 }
 h1,
 h2,
@@ -18,17 +19,28 @@ h6 {
 }
 ul.skills > li {
   font-family: 'Old Standard TT', serif;
-  font-weight: 400;
+  font-weight: 800;
   display: inline;
   float: left;
-  margin-left: 10%;
+  margin-left: 5%;
+  font-size: 1.6em;
+  list-style: none;
+  color: #595959;
 }
-ul.skills {
-  margin: 0 auto;
-  width: 100%;
+ul.skills > li li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  list-style: none;
+  font-size: 0.6em;
+  color: #595959;
+}
+ul.skills ul {
+  padding-left: .5em;
 }
 footer {
   clear: left;
+  position: absolute;
+  bottom: 0;
 }
 header {
   text-align: center;
@@ -39,7 +51,10 @@ header h2.title {
   font-family: "edding-780", cursive;
   font-style: normal;
   font-weight: 400;
-  margin-top: 0.15em;
+  margin-top: -0.65em;
+  color: #262626;
+  text-shadow: -2px 2px 0px Orange;
+  opacity: 0.65;
 }
 div.container {
   margin: 0 auto;
@@ -50,9 +65,12 @@ h1.name {
   margin: 0;
   text-align: center;
   padding: 0.15em 0.15em 0em 0.15em;
-  color: #232323;
+  color: Black;
+  text-shadow: -2px 2px 0px DarkOrange;
   font-weight: normal;
   font-family: "banshee-std", sans-serif;
+  position: relative;
+  z-index: 1;
 }
 h3 {
   font-size: 3em;
