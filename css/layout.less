@@ -6,9 +6,10 @@ html {
 }
 
 body {
-	margin: 0;
+	margin: 1em;
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
+	min-width: 320px;
 }
 
 h1,
@@ -23,14 +24,12 @@ h6 {
 }
 
 ul.skills {
+	margin: 0;
+	padding-left: 0;
+
 	>li {
 		font-family: 'Old Standard TT', serif;
 		font-weight: 800;
-		display: block;
-		width: 35%;
-		margin: .2em;
-		float: left;
-		margin-left: 5%;
 		font-size: 1.6em;
 		list-style: none;
 		color: lighten(Black, 35%);
@@ -50,25 +49,9 @@ ul.skills {
 	}
 }
 
-footer {
-	clear: left;
-	position: absolute;
-	bottom: 0;
-}
-
 header {
 	text-align: center;
 	margin-bottom: 2em;
-}
-
-img.me {
-	width: 400;
-	height: 500;
-}
-
-div.container {
-	margin: 0 auto;
-	width: 1200px;
 }
 
 p {
@@ -79,27 +62,14 @@ p:first-letter {
 	font-size: 2em;
 }
 
-main {
-	width: 50%;
-	float: left;
-}
-
-aside {
-	float: left;
-    column-count: 2;
-    width: 45%;
-    margin-left: 5%;
-}
-
 footer {
 	clear: both;
 	text-align: center;
-	width: 100%;
+	margin-top: 3em;
 }
 
 h1.name {
 	font-size: 8em;
-	margin: 0;
 	text-align: center;
 	padding: 0.15em 0.15em 0em 0.15em;
 	color: Black;
@@ -111,22 +81,13 @@ h1.name {
 	animation: name 1.5s ease-out 0s infinite alternate;
 }
 
-div.col-lg-4 {
-	width: 50%;
-	float: left;
-}
-
 h2.title {
-	font-weight: 200;
-	font-size: 3.25em;
-	margin-top: -0.65em;
-	margin-bottom: 0;
-	color: Black;
-	opacity: 0.8;
-	animation: title 1.5s ease-out 0s infinite alternate;
 	font-family: "velino-poster",sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	font-size: 3.25em;
+	margin-top: -0.65em;
+	opacity: 0.8;
 }
 
 /* The animation code */
@@ -140,26 +101,55 @@ h3 {
 	font-size: 3em;
 }
 
-
-ul.skills {
-	margin: 0;
-	padding-left: 0;
-}
-
-@media (max-width: 320px) {
+// Small Phones
+@media (max-width: 768px) {
 	html {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	div.container {
-		margin: 0 auto;
+		margin: 0em auto;
+		padding: 0em;
 		width: 100%;
 	}
 
 	h1.name {
 		font-size: 5.25em;
-		margin: 0;
-		text-align: center;
+	}
+
+	h2.title {
+		font-size: 2em;
+	}
+
+	main {
+		float: none;
+		width: 90%;
+		padding: 0% 5%;
+		max-width: 38.957142857em;
+		margin: 0 auto;
+	}
+
+	aside {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	ul.skills>li {
+		margin: 0em 0em 0em 5%;
+		width: 40%;
+		float: left;
 	}
 
 }
+
+// @media (min-width: 769px) and (max-width: 992px) {
+// 	main {
+// 		width: 95%;
+// 		padding: 0em 2em;
+// 	}
+// 	aside {
+// 		width: 80%;
+// 		margin-left: 20%;
+// 	}
+// }
