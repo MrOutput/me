@@ -61,6 +61,40 @@ footer {
 	clear: both;
 	text-align: center;
 	margin-top: 3em;
+	p {
+		font-family: "banshee-std", sans-serif;
+	}
+}
+
+h4 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+ul.contact {
+	font-size: 0.75em;
+	list-style: none;
+	display: block;
+	margin: 0;
+	width: 100%;
+	padding-left: 0;
+	li {
+		display: inline;
+	}
+	li:first-of-type {
+		margin-right: 1em;
+	}
+}
+
+a {
+	color: Grey;
+	text-decoration: none;
+	border-bottom: 1px dashed Grey;
+}
+
+a:hover {
+	color: darken(Grey, 25%);
+	border-bottom: 1px solid Grey;
 }
 
 h1.name {
@@ -76,6 +110,20 @@ h1.name {
 	animation: name 1.5s ease-out 0s infinite alternate;
 }
 
+div.page-header {
+	border-bottom: 1px dashed lighten(Black, 75%);
+}
+
+ul.medias {
+	list-style: none;
+	width: 100%;
+	padding-left: 0;
+	li {
+		display: inline;
+		margin: 0 2%;
+	}
+}
+
 h2.title {
 	font-family: "velino-poster",sans-serif;
 	font-style: normal;
@@ -83,6 +131,7 @@ h2.title {
 	font-size: 3.25em;
 	margin-top: -0.65em;
 	opacity: 0.8;
+	text-shadow: 0.05em 0.05em 0px lighten(Black, 85%);
 }
 
 /* The animation code */
@@ -94,6 +143,7 @@ h2.title {
 
 h3 {
 	font-size: 3em;
+	font-weight: 800;
 }
 
 // Small Devices
@@ -125,15 +175,16 @@ h3 {
 	}
 
 	ul.skills {
-		width: 100%;
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+
 		max-width: 41em;
 		margin: 0em auto;
-	}
-
-	ul.skills>li {
-		margin: 0em 0em 0em 5%;
-		width: 40%;
-		float: left;
+		width: 100%;
+		li {
+			width: 50%;
+		}
 	}
 
 }
