@@ -203,3 +203,34 @@ h3 {
 		font-size: 1.5em;
 	}
 }
+
+// Large Devices
+@media (min-width: 769px) {
+	div.container {
+		margin: 0em auto;
+		padding: 0em;
+		width: 100%;
+	}
+
+	main {
+		float: none;
+		width: 90%;
+		padding: 0% 5%;
+		max-width: 37em;
+		margin: 0 auto;
+	}
+
+	ul.skills {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+
+		max-width: 41em;
+		margin: 0em auto;
+		width: 100%;
+		li {
+			width: 50%;
+		}
+	}
+
+}
