@@ -13,6 +13,24 @@ body {
 	background: url('/images/fabric_of_squares_gray.png') repeat;
 }
 
+* {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Old Standard TT', serif;
 	font-weight: 400;
