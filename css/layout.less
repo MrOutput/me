@@ -62,13 +62,10 @@ main p:first-of-type:first-letter {
 footer {
 	clear: both;
 	text-align: center;
-	margin: 3em -3em -3em -3em;
+	margin-top: 3em;
 	background: url('/images/zwartevilt.png') repeat;
 	padding: 1/4em;
-	
-	* {
-		color: White !important;
-	}
+	color: White !important;
 
 	p {
 		font-family: "banshee-std", sans-serif;
@@ -173,6 +170,11 @@ h3 {
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
+}
+
+@-webkit-keyframes name {
+    0%   {opacity: 0.4;}
+    100% {opacity: 1;}
 }
 
 @keyframes name {
