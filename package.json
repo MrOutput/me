@@ -1,0 +1,26 @@
+{
+  "name": "rlc.ninja",
+  "version": "1.0.0",
+  "description": "My site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralph3991/me.git"
+  },
+  "author": "Rafael Cepeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralph3991/me/issues"
+  },
+  "homepage": "https://github.com/ralph3991/me#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
