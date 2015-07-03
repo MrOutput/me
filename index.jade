@@ -3,18 +3,23 @@ html(lang="en")
   head
     title Rafael Cepeda
     meta(charset="UTF-8")
+    meta(name="author" content="Rafael Cepeda")
+    meta(name="description" content="Rafael Cepeda is a passionate Full Stack Developer that loves all things computer science.")
+    meta(name="keywords" content="programmer, software engineer, database admin, full stack, developer")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" type="text/css" href="css/layout.css")
     script(src="//use.typekit.net/dbs7yxs.js")
     script try{Typekit.load();}catch(e){}
   body
     div.container
-      header
-        h1.name Rafael Cepeda
-        h2.animated.title Full Stack Web Developer
+      header(itemscope itemtype="http://schema.org/Person")
+        h1.name
+          span(itemprop="givenName") Rafael
+          span(itemprop="familyName") Cepeda
+        h2.animated.title(itemprop="jobTitle") Full Stack Developer
         ul.contact
-          li: a(href="mailto:rcepeda1993@gmail.com") rcepeda1993@gmail.com
-          li: a(href="tel:14077651696") +1 (407) 765-1696
+          li: a(href="mailto:rcepeda1993@gmail.com" itemprop="email") rcepeda1993@gmail.com
+          li: a(href="tel:14077651696" itemprop="telephone") +1 (407) 765-1696
       main
         div.page-header
           h3.animated.fadeInDown Back in the Day...
