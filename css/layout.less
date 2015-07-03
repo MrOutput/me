@@ -10,7 +10,10 @@ body {
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
-	background: url('/images/fabric_of_squares_gray.png') repeat;
+  background: url('/images/fabric_of_squares_gray.png') repeat;
+  @media (min-resolution: 2dppx) {
+    background: url('/images/fabric_of_squares_gray_@2X.png') repeat;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,7 +81,7 @@ footer {
 	clear: both;
 	text-align: center;
 	margin-top: 3em;
-	background: url('/images/zwartevilt.png') repeat;
+	background-color: #131313;
 	padding: 1/4em;
 	color: White !important;
 
@@ -336,7 +339,7 @@ h3 {
 	}
 
 	h2.title {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 
 	main {

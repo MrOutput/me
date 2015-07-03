@@ -10,6 +10,11 @@ body {
   min-width: 320px;
   background: url('/images/fabric_of_squares_gray.png') repeat;
 }
+@media (min-resolution: 2dppx) {
+  body {
+    background: url('/images/fabric_of_squares_gray_@2X.png') repeat;
+  }
+}
 h1,
 h2,
 h3,
@@ -69,7 +74,7 @@ footer {
   clear: both;
   text-align: center;
   margin-top: 3em;
-  background: url('/images/zwartevilt.png') repeat;
+  background-color: #131313;
   padding: 0.25em;
   color: White !important;
 }
@@ -290,7 +295,7 @@ h3 {
     font-size: 5.5em;
   }
   h2.title {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   main {
     float: none;
