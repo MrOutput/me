@@ -26,7 +26,7 @@ h6 {
   margin: 0;
 }
 span#learning {
-  margin-top: 2em;
+  margin: 2em 0;
   font-style: italic;
   border-left: 2px solid DarkGrey;
   border-right: 2px solid DarkGrey;
@@ -35,8 +35,21 @@ span#learning {
 }
 span#learning:before {
   font-style: normal;
-  content: "Reading: ";
+  content: "Currently Reading: ";
   font-weight: bold;
+}
+ul#workflow {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+}
+ul#workflow li {
+  float: left;
+}
+ul#workflow li:not(:first-of-type):before {
+  content: ",";
+  color: Grey;
+  margin-right: 0.25em;
 }
 ul.skills {
   margin: 0;
@@ -73,7 +86,7 @@ main p:first-of-type:first-letter {
 footer {
   clear: both;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
   background-color: #131313;
   padding: 0.25em;
   color: White !important;
