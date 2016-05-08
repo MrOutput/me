@@ -61,14 +61,19 @@ aside h2.title {
   /* Chrome, Safari, Opera */
   animation-delay: 0.5s;
 }
-ul#workflow {
+aside ul#git_activity {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.75em;
+}
+ul.inline {
   list-style: none;
   padding-left: 0;
 }
-ul#workflow li {
+ul.inline li {
   display: inline;
 }
-ul#workflow li:not(:first-of-type):before {
+ul.inline li:not(:first-of-type):before {
   content: ",";
   color: Grey;
   margin-right: 0.25em;

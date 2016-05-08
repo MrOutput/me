@@ -19,6 +19,7 @@ html(lang="en")
           ul.contact
             li: a(href="mailto:r.cepeda@linux.com" itemprop="email") r.cepeda@linux.com
             li: a(href="tel:14077651696" itemprop="telephone") +1 (407) 765-1696
+        ul#git_activity
         footer
           ul.medias
             li: a(href="https://github.com/MrOutput" target="_blank") GitHub
@@ -27,9 +28,14 @@ html(lang="en")
           p Rafael L. Cepeda
       main
         h4 Education
-        p Univeristy of West Florida <br> <small>B.S. Information Technology: Network Systems Operations</small>
+        p Univeristy of West Florida <br><small>B.S. Information Technology: Network Systems Operations</small><br><small>Certificate in Intelligence Analysis</small>
+        h4 Certificates
+        ul.inline
+          li Network+
+          li Security+
+          li MCSA: SQL Server
         h4 Workflow
-        ul#workflow
+        ul.inline
           li Arch Linux
           li i3
           li Dvorak Keyboard
@@ -101,3 +107,20 @@ html(lang="en")
           li Version Control
             ul
               li Git
+    script.
+        var git = new XMLHttpRequest();
+        git.open("GET", "https://api.github.com/users/MrOutput/events/public");
+        git.responseType = "json";
+        git.onload = function () {
+            var activity = document.getElementById("git_activity");
+
+            for (var i = 0; i < 5; i++) {
+                console.log(git.response[i]);
+
+                var a = document.createElement("li");
+                a.innerHTML = git.response[i].type + ' ' + git.response[i].repo.name;
+
+                activity.appendChild(a);
+            }
+        };
+        git.send();
