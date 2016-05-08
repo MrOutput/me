@@ -25,26 +25,48 @@ h6 {
   font-weight: 400;
   margin: 0;
 }
-span#learning {
-  margin: 2em 0;
-  font-style: italic;
-  border-left: 2px solid DarkGrey;
-  border-right: 2px solid DarkGrey;
-  text-align: center;
-  display: block;
+small {
+  font-size: 0.75em;
 }
-span#learning:before {
+aside {
+  background-color: #131313;
+  color: White;
+  padding: 1em;
+  flex: 0 0 25%;
+}
+aside h1.name {
+  font-size: 6em;
+  text-align: center;
+  padding: 0.15em 0.15em 0em 0.15em;
+  color: White;
+  font-weight: normal;
+  font-family: "banshee-std", sans-serif;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: name 1.5s ease-out 0s infinite alternate;
+  animation: name 1.5s ease-out 0s infinite alternate;
+}
+aside h2.title {
+  font-family: "velino-poster", sans-serif;
   font-style: normal;
-  content: "Currently Reading: ";
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 2.25em;
+  margin-top: -0.65em;
+  color: #999999;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  -webkit-animation-delay: 0.5s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0.5s;
 }
 ul#workflow {
   list-style: none;
   padding-left: 0;
-  display: inline-block;
 }
 ul#workflow li {
-  float: left;
+  display: inline;
 }
 ul#workflow li:not(:first-of-type):before {
   content: ",";
@@ -79,9 +101,6 @@ header {
 }
 p {
   line-height: 2em;
-}
-main p:first-of-type:first-letter {
-  font-size: 2em;
 }
 footer {
   clear: both;
@@ -121,18 +140,6 @@ a:hover {
   color: #404040;
   border-bottom: 1px solid Grey;
 }
-h1.name {
-  font-size: 9em;
-  text-align: center;
-  padding: 0.15em 0.15em 0em 0.15em;
-  color: Black;
-  font-weight: normal;
-  font-family: "banshee-std", sans-serif;
-  position: relative;
-  z-index: 1;
-  -webkit-animation: name 1.5s ease-out 0s infinite alternate;
-  animation: name 1.5s ease-out 0s infinite alternate;
-}
 div.page-header {
   border-bottom: 1px dashed #bfbfbf;
 }
@@ -144,22 +151,6 @@ ul.medias {
 ul.medias li {
   display: inline;
   margin: 0 2%;
-}
-h2.title {
-  font-family: "velino-poster", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.25em;
-  margin-top: -0.65em;
-  opacity: 0.8;
-  text-shadow: 0.05em 0.05em 0px #d9d9d9;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
-  -webkit-animation-delay: 0.5s;
-  /* Chrome, Safari, Opera */
-  animation-delay: 0.5s;
 }
 h3 {
   font-size: 3em;
@@ -341,12 +332,14 @@ h3 {
     margin: 0em auto;
     padding: 0em;
     width: 100%;
+    display: flex;
   }
   main {
     float: none;
     width: 100%;
     max-width: 37em;
     margin: 0 auto;
+    padding: 2em 0;
   }
   ul.skills {
     -webkit-column-count: 2;

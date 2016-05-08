@@ -12,24 +12,22 @@ html(lang="en")
     script try{Typekit.load();}catch(e){}
   body
     div.container
-      header(itemscope itemtype="http://schema.org/Person")
-        h1.name(itemprop="name") Rafael Cepeda
-        h2.animated.title(itemprop="jobTitle") Software Engineer
-        ul.contact
-          li: a(href="mailto:r.cepeda@linux.com" itemprop="email") r.cepeda@linux.com
-          li: a(href="tel:14077651696" itemprop="telephone") +1 (407) 765-1696
+      aside
+        header(itemscope itemtype="http://schema.org/Person")
+          h1.name(itemprop="name") Rafael Cepeda
+          h2.animated.title(itemprop="jobTitle") Software Engineer
+          ul.contact
+            li: a(href="mailto:r.cepeda@linux.com" itemprop="email") r.cepeda@linux.com
+            li: a(href="tel:14077651696" itemprop="telephone") +1 (407) 765-1696
+        footer
+          ul.medias
+            li: a(href="https://github.com/MrOutput" target="_blank") GitHub
+            li: a(href="https://bitbucket.org/MrOutput" target="_blank") Bitbucket
+            li: a(href="http://stackoverflow.com/users/4135670/rafael?tab=profile" target="_blank") StackOverflow
+          p Rafael L. Cepeda
       main
-        div.page-header
-          h3.animated.fadeInDown Back in the Day...
-        p
-          | Looking back, being grounded wasn't such a bad thing. 
-          | Programming for the web has been a passion of mine ever 
-          | since picking up a Microsoft Front Page 2002 book in the empty 
-          | room where I would take my punishment. 
-        p
-          | I love working with a fun, energetic, passionate team of developers!
         h4 Education
-        p Univeristy of West Florida <br> <small>B.S. Information Technology:Network Systems Operations</small>
+        p Univeristy of West Florida <br> <small>B.S. Information Technology: Network Systems Operations</small>
         h4 Workflow
         ul#workflow
           li Arch Linux
@@ -60,12 +58,14 @@ html(lang="en")
           li Webservers
             ul
               li NGINX
+              li Mongoose
               li Apache
               li Node HTTP
           li Servers
             ul
               li Debian Based
               li RHEL
+              li FreeBSD
               li Arch
           li Package Management
             ul
@@ -101,11 +101,3 @@ html(lang="en")
           li Version Control
             ul
               li Git
-        span#learning
-          i The Linux Programming Interface
-      footer
-        ul.medias
-          li: a(href="https://github.com/MrOutput" target="_blank") GitHub
-          li: a(href="https://bitbucket.org/MrOutput" target="_blank") Bitbucket
-          li: a(href="http://stackoverflow.com/users/4135670/rafael?tab=profile" target="_blank") StackOverflow
-        p Rafael L. Cepeda
