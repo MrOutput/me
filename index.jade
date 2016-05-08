@@ -115,8 +115,6 @@ html(lang="en")
             var activity = document.getElementById("git_activity");
 
             for (var i = 0; i < 5; i++) {
-                console.log(git.response[i]);
-
                 var a = document.createElement("li");
                 a.innerHTML = git.response[i].type + ' ' + git.response[i].repo.name;
 
