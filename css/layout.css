@@ -65,6 +65,12 @@ aside ul#git_activity {
   list-style: none;
   padding-left: 0;
   font-size: 0.75em;
+  text-align: center;
+}
+aside ul#git_activity:before {
+  content: "Recent GitHub Activity";
+  color: #54C571;
+  font-size: 1.25em;
 }
 ul.inline {
   list-style: none;

@@ -28,12 +28,13 @@ html(lang="en")
           p Rafael L. Cepeda
       main
         h4 Education
-        p Univeristy of West Florida <br><small>B.S. Information Technology: Network Systems Operations</small><br><small>Certificate in Intelligence Analysis</small>
+        p Univeristy of West Florida <br><small>B.S. Information Technology: Network Systems Operations</small>
         h4 Certificates
         ul.inline
           li Network+
           li Security+
           li MCSA: SQL Server
+          li Intelligence Analysis
         h4 Workflow
         ul.inline
           li Arch Linux
@@ -116,7 +117,20 @@ html(lang="en")
 
             for (var i = 0; i < 5; i++) {
                 var a = document.createElement("li");
-                a.innerHTML = git.response[i].type + ' ' + git.response[i].repo.name;
+
+                var msg = "";
+                switch (git.response[i].type) {
+                    case "PushEvent":
+                        msg = "Pushed to";
+                        break;
+                    case "WatchEvent":
+                        msg = "Starred";
+                        break;
+                }
+                if (msg === "") {
+                    msg = git.response[i].type;
+                }
+                a.innerHTML = msg + ' ' + git.response[i].repo.name;
 
                 activity.appendChild(a);
             }
