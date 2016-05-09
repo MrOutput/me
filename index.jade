@@ -116,8 +116,6 @@ html(lang="en")
             var activity = document.getElementById("git_activity");
 
             for (var i = 0; i < 5; i++) {
-                var a = document.createElement("li");
-
                 var msg = "";
                 switch (git.response[i].type) {
                     case "PushEvent":
@@ -130,8 +128,8 @@ html(lang="en")
                 if (msg === "") {
                     msg = git.response[i].type;
                 }
+                var a = document.createElement("li");
                 a.innerHTML = msg + ' ' + git.response[i].repo.name;
-
                 activity.appendChild(a);
             }
         };
