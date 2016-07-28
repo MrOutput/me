@@ -40,7 +40,8 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('watch', ['watch']);
   grunt.registerTask('build', ['jade', 'less']);
 
 };
