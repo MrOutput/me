@@ -39,12 +39,12 @@ html(lang="en")
             li Intelligence Analysis
         h4 Workflow
         ul.inline
-          li Arch Linux
+          li Gentoo
           li i3
           li Dvorak Keyboard
-          li VIM
+          li Vim
           li Git
-          li Shell
+          li and a terminal
         h4 Skillset
         ul.skills
           li Languages
@@ -57,7 +57,6 @@ html(lang="en")
               li C
               li Assembly
               li Shell
-          li Node
           li Databases
             ul
               li Oracle
@@ -117,7 +116,7 @@ html(lang="en")
         git.onload = function () {
             var activity = document.getElementById("git_activity");
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 10; i++) {
                 var msg = "";
                 switch (git.response[i].type) {
                     case "PushEvent":
@@ -126,13 +125,24 @@ html(lang="en")
                     case "WatchEvent":
                         msg = "Starred";
                         break;
+                    case "IssueCommentEvent":
+                        msg = "Commented on an Issue at";
+                        break;
+                    case "IssuesEvent":
+                        msg = "Created Issue at";
+                        break;
+                    default:
+                         msg = git.response[i].type;
                 }
-                if (msg === "") {
-                    msg = git.response[i].type;
-                }
-                var a = document.createElement("li");
-                a.innerHTML = msg + ' ' + git.response[i].repo.name;
-                activity.appendChild(a);
+                msg = document.createTextNode(msg + " ");
+                var li = document.createElement("li");
+                var a = document.createElement("a");
+                a.href = "http://www.github.com/" + git.response[i].repo.name;
+                a.target = "_blank";;
+                a.innerHTML = git.response[i].repo.name;
+                li.appendChild(msg);
+                li.appendChild(a);
+                activity.appendChild(li);
             }
         };
         git.send();
