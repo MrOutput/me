@@ -130,6 +130,9 @@ html(lang="en")
                     case "IssuesEvent":
                         msg = "Created Issue at";
                         break;
+                    case "ForkEvent":
+                        msg = "Forked";
+                        break;
                     default:
                          msg = git.response[i].type;
                 }
