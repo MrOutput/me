@@ -127,13 +127,16 @@ html(lang="en")
                         msg = "Commented on an Issue at";
                         break;
                     case "IssuesEvent":
-                        msg = "Created Issue at";
+                        msg = "Opened Issue at";
                         break;
                     case "ForkEvent":
                         msg = "Forked";
                         break;
                     case "CreateEvent":
                         msg = "Created";
+                        break;
+                    case "PublicEvent":
+                        msg = "Released";
                         break;
                     default:
                          msg = git.response[i].type;
