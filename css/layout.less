@@ -31,15 +31,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 ul#papers {
-    list-style: none;
-    padding-left: 0;
     font-size: 0.75em;
 }
 
 ul#temps {
-    list-style: none;
-    padding-left: 0;
     font-size: 0.75em;
     margin: 0;
 }
@@ -101,8 +102,6 @@ aside {
     }
 
     ul#git_activity {
-        list-style: none;
-        padding-left: 0;
         font-size: 0.75em;
         text-align: center;
         color: lighten(@BoardPurp, 10%);
@@ -116,11 +115,8 @@ aside {
 }
 
 ul.inline {
-  list-style: none;
-  padding-left: 0;
-
   li {
-        display: inline;
+    display: inline;
 
     &:not(:first-of-type):before {
       content: ",";
