@@ -43,25 +43,34 @@ html(lang="en")
           //-li MCSA: SQL Server
           li <a href="http://uwf.edu/continuinged/departments/career-development/certificate-programs/intelligence-analysis/" target="_blank">Intelligence Analysis</a>
           li <a href="http://uwf.edu/ceps/departments/instructional-workforce-and-applied-technology/certificate-programs/technology-systems-support/" target="_blank">Technology Systems Support</a>
-        h4 Workflow
-        ul.inline
-          li Gentoo
-          li i3
-          li Dvorak Keyboard
-          li Vim
-          li Git
+        //-
+          h4 Preferred Workflow
+          ul.inline
+            li Gentoo
+            li i3
+            li Dvorak Keyboard
+            li ViM
+            li Git
         h4 Skillset
         ul.skills
-          li Languages
+          li Programming Languages
             ul
-              li HTML
-              li CSS
+              li Assembly
+              li C
+              li Perl
+              li AWK
+              li Java
               li JavaScript
               li PHP
-              li Java
-              li C
-              li Assembly
-              li Shell
+              li Bash
+          li Web Technologies
+            ul
+              li Angular
+              li J2EE
+              li HTML
+              li CSS
+              li Laravel
+              li TypeScript
           li Databases
             ul
               li Oracle
@@ -73,51 +82,19 @@ html(lang="en")
               li NGINX
               li Mongoose
               li Apache
-              li Node HTTP
-          li Servers
+          li Operating Systems
             ul
-              li Debian Based
-              li RHEL
-              li FreeBSD
-              li Arch
-          li Package Management
-            ul
-              li Composer
-              li NPM
-              li Bower
-          li Testing
-            ul
-              li Node Assert
-              li Mocha
-              li PHPUnit
-          li Frameworks &amp; Libraries
-            ul
-              li Express.js
-              li AngularJS
-              li Laravel
-              li Symfony
-              li Fatfree
-              li jQuery
-              li Bootstrap
-              li SemanticUI
-          li Technologies &amp; Services
-            ul
-              li AJAX
-              li REST
-              li WebSocket
-              li OpenSSL
-              li OpenSSH
-          li Automation
-            ul
-              li Grunt
-              li Gulp
-          li Version Control
-            ul
-              li Git
-        h5(style="margin-top: 1em") Temporary Files
-        ul#temps
-          li
-            a(href="files/tree_algo.txt" target="_blank" download) Tree Algorithms
+              li UNIX
+          //-
+            li Tools
+              ul
+                li Git
+                li Bash
+        //-
+          h5(style="margin-top: 1em") Temporary Files
+          ul#temps
+            li
+              a(href="files/tree_algo.txt" target="_blank" download) Tree Algorithms
     script.
         var git = new XMLHttpRequest();
         git.open("GET", "https://api.github.com/users/MrOutput/events/public");
@@ -135,7 +112,7 @@ html(lang="en")
                         msg = "Starred";
                         break;
                     case "IssueCommentEvent":
-                        msg = "Commented on an Issue at";
+                        msg = "Commented on Issue at";
                         break;
                     case "IssuesEvent":
                         msg = "Opened Issue at";
@@ -145,6 +122,12 @@ html(lang="en")
                         break;
                     case "CreateEvent":
                         msg = "Created";
+                        break;
+                    case "PullRequestEvent":
+                        msg = "Pull Request to";
+                        break;
+                    case "DeleteEvent":
+                        msg = "Deleted";
                         break;
                     case "PublicEvent":
                         msg = "Released";
