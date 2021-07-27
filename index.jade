@@ -13,7 +13,7 @@ html(lang="en")
   body
     div.container
       aside
-        header(itemscope itemtype="http://schema.org/Person")
+        header(itemscope itemtype="https://schema.org/Person")
           h1.name(itemprop="name") Rafael Cepeda
           h2.animated.title(itemprop="jobTitle") Software Engineer
           ul.contact
@@ -25,11 +25,11 @@ html(lang="en")
           ul.medias
             li: a(href="https://github.com/MrOutput" target="_blank") GitHub
             li: a(href="https://www.linkedin.com/in/rafael-cepeda-54a173154/" target="_blank") LinkedIn
-            li: a(href="http://stackoverflow.com/users/4135670/rafael?tab=profile" target="_blank") StackOverflow
+            li: a(href="https://stackoverflow.com/users/4135670/rafael?tab=profile" target="_blank") Stack Overflow
           p Rafael L. Cepeda
       main
         h4 Education
-        p University of West Florida <br><small><a href="http://uwf.edu/cse/departments/computer-science/undergradmajors/information-technology/network-systems-operations/" target="_blank">B.S.&nbsp;Information&nbsp;Technology: Network&nbsp;Systems&nbsp;Operations</a></small>
+        p University of West Florida <br><small><a href="https://uwf.edu/cse/departments/computer-science/undergradmajors/information-technology/network-systems-operations/" target="_blank">B.S.&nbsp;Information&nbsp;Technology: Network&nbsp;Systems&nbsp;Operations</a></small>
         h5 Papers
         ul#papers
           li
@@ -38,11 +38,11 @@ html(lang="en")
             a(href="files/the_modern_web.pdf" target="_blank") The Modern Web
         h4 Certificates
         ul#certs
-          //-li Network+
+          li <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=M1XYENQH73QQQLSZ" target="_blank">CompTIA Network+</a>
           //-li Security+
           //-li MCSA: SQL Server
-          li <a href="http://uwf.edu/continuinged/departments/career-development/certificate-programs/intelligence-analysis/" target="_blank">Intelligence Analysis</a>
-          li <a href="http://uwf.edu/ceps/departments/instructional-workforce-and-applied-technology/certificate-programs/technology-systems-support/" target="_blank">Technology Systems Support</a>
+          li <a href="https://onlinedegrees.uwf.edu/online-degrees/intelligence-analysis-certificate/" target="_blank">Intelligence Analysis</a>
+          //-li <a href="https://uwf.edu/ceps/departments/instructional-workforce-and-applied-technology/certificate-programs/technology-systems-support/" target="_blank">Technology Systems Support</a>
         //-
           h4 Preferred Workflow
           ul.inline
@@ -57,20 +57,18 @@ html(lang="en")
             ul
               li Assembly
               li C
-              li Perl
+              li BASH
               li Sed / AWK
+              li Perl 5
               li Java
-              li JavaScript
+              li TypeScript and JavaScript
               li PHP
-              li Bash
           li Web Technologies
             ul
+              li HTML / CSS
               li Angular
-              li J2EE
-              li HTML
-              li CSS
+              li React
               li Laravel
-              li TypeScript
           li Databases
             ul
               li Oracle
@@ -80,8 +78,7 @@ html(lang="en")
           li Web Servers
             ul
               li NGINX
-              li Mongoose
-              li Apache
+              li Apache httpd
           li Operating Systems
             ul
               li UNIX
@@ -89,7 +86,7 @@ html(lang="en")
             li Tools
               ul
                 li Git
-                li Bash
+                li BASH
         //-
           h5(style="margin-top: 1em") Temporary Files
           ul#temps
@@ -138,7 +135,7 @@ html(lang="en")
                 msg = document.createTextNode(msg + " ");
                 var li = document.createElement("li");
                 var a = document.createElement("a");
-                a.href = "http://www.github.com/" + git.response[i].repo.name;
+                a.href = "https://www.github.com/" + git.response[i].repo.name;
                 a.target = "_blank";;
                 a.innerHTML = git.response[i].repo.name;
                 li.appendChild(msg);
